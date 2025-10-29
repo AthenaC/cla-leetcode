@@ -3,30 +3,31 @@
  * @param {string} t
  * @return {boolean}
  */
-var backspaceCompare = function(s, t) {
-    const sStack = [];
+
+ function getStack(s) {
+    const stack = [];
     for (const c of s) {
         if (c === "#") {
-            sStack.pop();
+            stack.pop();
         } else {
-            sStack.push(c)
+            stack.push(c)
         }
     }
-    const tStack = [];
-    for (const c of t) {
-        if (c === "#") {
-            tStack.pop();
-        } else {
-            tStack.push(c)
-        }
-    }
-    if (sStack.length !== tStack.length) {
-        return false;
-    }
-    while (sStack.length > 0) {
-        if (sStack.pop() !== tStack.pop()) {
-            return false;
-        }
-    }
-    return true;
+    return stack;
+ }
+ 
+var backspaceCompare = function(s, t) {
+    const sStack = getStack(s);
+    const tStack = getStack(t);
+    return sStack.join('') === tStack.join('');
+
+    // if (sStack.length !== tStack.length) {
+    //     return false;
+    // }
+    // while (sStack.length > 0) {
+    //     if (sStack.pop() !== tStack.pop()) {
+    //         return false;
+    //     }
+    // }
+    // return true;
 };
