@@ -3,6 +3,9 @@
  * @return {number}
  */
 var missingNumber = function(nums) {
+    if (!nums.includes(0)) {
+        return 0;
+    }
     nums.sort((a, b) => a - b);
     for (let i = 0; i < nums.length; i++) {
         if (nums[i + 1] !== nums[i] + 1) {
