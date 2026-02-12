@@ -5,9 +5,7 @@
 var findCenter = function(edges) {
     const seen = {}
 
-    for (const edge of edges) {
-        const node1 = edge[0]
-        const node2 = edge[1]
+    for (const [node1, node2] of edges) {
         if (seen[node1]) {
             return node1
         }
