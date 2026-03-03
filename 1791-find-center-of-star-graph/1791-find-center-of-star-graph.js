@@ -3,16 +3,19 @@
  * @return {number}
  */
 var findCenter = function(edges) {
-    const seen = new Set()
+    const graph = {};
 
-    for (const [node1, node2] of edges) {
-        if (seen.has(node1)) {
-            return node1
+    for (const [n1, n2] of edges) {
+        graph[n1] ??= []
+        graph[n2] ??= []
+
+        graph[n1].push(n2)
+        graph[n2].push(n1)
+    }
+
+    for (const [key, val] of Object.entries(graph)) {
+        if (val.length > 1) {
+            return +key;
         }
-        if (seen.has(node2)) {
-            return node2
-        }
-        seen.add(node1)
-        seen.add(node2)
     }
 };
