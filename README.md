@@ -10,10 +10,12 @@ Leetcode Problems + Answers I've worked on during Marcy Lab School's CLA Program
 ## Math
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0070-climbing-stairs](https://github.com/AthenaC/cla-leetcode/tree/main/0070-climbing-stairs/) | Easy |
 | [0509-fibonacci-number](https://github.com/AthenaC/cla-leetcode/tree/main/0509-fibonacci-number/) | Easy |
 ## Dynamic Programming
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0070-climbing-stairs](https://github.com/AthenaC/cla-leetcode/tree/main/0070-climbing-stairs/) | Easy |
 | [0509-fibonacci-number](https://github.com/AthenaC/cla-leetcode/tree/main/0509-fibonacci-number/) | Easy |
 ## Recursion
 | Problem Name | Difficulty |
@@ -22,5 +24,6 @@ Leetcode Problems + Answers I've worked on during Marcy Lab School's CLA Program
 ## Memoization
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0070-climbing-stairs](https://github.com/AthenaC/cla-leetcode/tree/main/0070-climbing-stairs/) | Easy |
 | [0509-fibonacci-number](https://github.com/AthenaC/cla-leetcode/tree/main/0509-fibonacci-number/) | Easy |
 <!---LeetCode Topics End-->
